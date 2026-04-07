@@ -78,7 +78,7 @@
 .about-image {
   height: 420px;
   border-radius: 16px;
-  background: url('/img/banner02.png') center/cover no-repeat;
+  background: url('../img/banner02.png') center/cover no-repeat;
   position: relative;
 }
 
