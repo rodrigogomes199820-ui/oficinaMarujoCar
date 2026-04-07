@@ -1,0 +1,146 @@
+.about {
+  background: linear-gradient(to bottom, #0d0d0d, #111);
+  padding: 120px 20px;
+  color: white;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+
+.tag {
+  color: #c62828;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+.about-content h2 {
+  font-size: 42px;
+  margin: 15px 0;
+  line-height: 1.2;
+}
+
+.about-content h2 span {
+  color: #c62828;
+}
+
+.about-content p {
+  color: #aaa;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.about-numbers {
+  display: flex;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+.about-numbers div {
+  text-align: center;
+}
+
+.about-numbers strong {
+  display: block;
+  font-size: 26px;
+  color: #fff;
+}
+
+.about-numbers span {
+  font-size: 13px;
+  color: #aaa;
+}
+
+
+.btn-about {
+  display: inline-block;
+  padding: 14px 22px;
+  background: #c62828;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.btn-about:hover {
+  background: #b71c1c;
+}
+
+
+.about-image {
+  height: 420px;
+  border-radius: 16px;
+  background: url('/img/banner02.png') center/cover no-repeat;
+  position: relative;
+}
+
+.about-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.2);
+  border-radius: 16px;
+}
+
+
+@media (max-width: 768px) {
+
+  .about {
+    padding: 80px 20px;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr; 
+    gap: 40px;
+  }
+
+  .about-content {
+    text-align: center;
+  }
+
+  .tag {
+    font-size: 16px;
+  }
+
+  .about-content h2 {
+    font-size: 28px;
+  }
+
+  .about-content p {
+    font-size: 15px;
+  }
+
+ 
+  .about-numbers {
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; 
+  }
+
+  .about-numbers strong {
+    font-size: 22px;
+  }
+
+  .about-numbers span {
+    font-size: 12px;
+  }
+
+ 
+  .btn-about {
+    padding: 12px 18px;
+    font-size: 14px;
+  }
+
+  
+  .about-image {
+    height: 250px;
+  }
+}

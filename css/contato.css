@@ -1,0 +1,177 @@
+
+.contact {
+  background: linear-gradient(to bottom, #0d0d0d, #111);
+  padding: 120px 20px;
+  color: #fff; 
+}
+
+
+.contact-overlay {
+  display: flex;
+  justify-content: center;
+}
+
+
+.contact-container {
+  max-width: 1000px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 30px;
+}
+
+
+.contact-card {
+  background: #1a1a1a;
+  border-radius: 16px;
+  padding: 40px;
+  border: 1px solid #222;
+  color: #fff;
+}
+
+
+.contact-card.main {
+  background: linear-gradient(135deg, #1a1a1a, #111);
+  border: 1px solid #2a2a2a;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+}
+
+.contact-card.main h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.contact-card.main span {
+  color: #25d366;
+}
+
+.contact-card.main p {
+  color: #aaa;
+  margin-bottom: 15px;
+}
+
+
+.contact-info p {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+
+.hours p {
+  font-size: 14px;
+  color: #bbb;
+}
+
+
+.btn-contact {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 22px;
+  background: linear-gradient(135deg, #25d366, #1ebe5d);
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  box-shadow: 0 5px 20px rgba(37,211,102,0.4);
+}
+
+.btn-contact:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(37,211,102,0.6);
+}
+
+.contact-card.secondary {
+  background: #141414;
+}
+
+.contact-card.secondary h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.contact-card.secondary p {
+  color: #bbb;
+  margin-bottom: 5px;
+}
+
+.link-map {
+  display: inline-block;
+  margin-top: 20px;
+  color: #c62828;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link-map:hover {
+  text-decoration: underline;
+}
+
+
+.mapa img {
+  width: 200px;
+  border-radius: 8px;
+}
+
+
+@media (max-width: 768px) {
+
+  .contact {
+    padding: 0 20px;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr; 
+    gap: 20px;
+  }
+
+  .contact-card {
+    padding: 25px;
+  }
+
+  .contact-card.main h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .contact-card.main p {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .contact-info p,
+  .hours p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .btn-contact {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+  }
+
+  .contact-card.secondary h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .contact-card.secondary p {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .link-map {
+    display: block;
+    text-align: center;
+  }
+
+  .mapa {
+    text-align: center;
+  }
+
+  .mapa img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
