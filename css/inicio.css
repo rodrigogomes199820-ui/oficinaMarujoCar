@@ -53,13 +53,7 @@
   font-size: 18px;
 }
 
-.btn {
-  border: 2px solid white;
-  padding: 12px 20px;
-  color: white;
-  text-decoration: none;
-  display: inline-block;
-}
+
 
 @media (max-width: 768px) {
 

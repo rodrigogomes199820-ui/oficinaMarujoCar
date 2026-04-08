@@ -13,54 +13,6 @@ hamburger.addEventListener('click', ()=>{
 
 
 
-// MODAL
-const botaoModal = document.querySelector('.abrirModal');
-const modal = document.querySelector('.modal');
-const enviar = document.querySelector('#enviar');
-
-botaoModal.addEventListener('click', () => {
-  modal.classList.add('ativo');
-});
-
-modal.addEventListener('click', (event) => {
-  if (event.target === modal) {
-    modal.classList.remove('ativo');
-  }
-});
-
-
-enviar.addEventListener('click', () => {
-  const nome = document.querySelector('#nome').value;
-  const servico = document.querySelector('#servico').value;
-  const data = document.querySelector('#data').value;
-  const hora = document.querySelector('#hora').value;
-  const mensagemExtra = document.querySelector('#mensagemExtra').value;
-
-  const telefone = "557599294167";
-
-  const mensagem = `Olá, meu nome é ${nome}.
-Quero agendar um serviço:
-
-🔧 Serviço: ${servico}
-📅 Data: ${data}
-⏰ Hora: ${hora}
-
-📝 Problema: ${mensagemExtra}`;
-
-  const url = `https://wa.me/${telefone}?text=${encodeURIComponent(mensagem)}`;
-
-  window.open(url, '_blank');
-});
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -70,14 +22,36 @@ Quero agendar um serviço:
 
 // codigo do chat do whatsapp
 const botao = document.querySelector('.whatsapp-button');
-const chat = document.querySelector('.whatsapp-chat');
+const chat = document.querySelector('#chatBox');
+const enviar = document.querySelector('#enviarWhats');
 
 botao.addEventListener('click', () => {
   chat.classList.toggle('ativo');
- 
 });
 
- chat.classList.remove('ativo');
+enviar.addEventListener('click', () => {
+  const nome = document.querySelector('#nome').value;
+  const data = document.querySelector('#data').value;
+  const hora = document.querySelector('#hora').value;
+  const mensagemExtra = document.querySelector('#mensagem').value;
+
+  if (!nome || !data || !hora) {
+    alert('Preencha nome, data e horário!');
+    return;
+  }
+
+  const mensagem = `Olá, meu nome é ${nome}.
+Quero agendar um serviço.
+
+📅 Data: ${data}
+⏰ Hora: ${hora}
+
+🛠️ Serviço: ${mensagemExtra || 'Não informado'}`;
+
+  const url = `https://wa.me/557599294167?text=${encodeURIComponent(mensagem)}`;
+
+  window.open(url, '_blank');
+});
 
 
 
