@@ -55,7 +55,32 @@
     <p>
       Alinhamento, balaceamento, suspensão e Freios.
     </p>
-    <a href="https://wa.me/557599294167?text=Olá,%20quero%20agendar%20um%20serviço" class="btn">Reserve seu Horario</a>
+
+  
+<button class="abrirModal" id="abrirModal">Agendar agora</button>
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <h2>Agendamento</h2>
+
+    <input type="text" class="nome" id="nome" placeholder="Seu nome">
+
+    <select class="servico" id="servico">
+      <option>Troca de óleo</option>
+      <option>Revisão</option>
+    </select>
+
+    <input class="data" type="date" id="data">
+    <input class="hora" type="time" id="hora">
+
+    <textarea class="mensagemExtra" id="mensagemExtra" placeholder="Descreva o problema do carro..."></textarea>
+
+   <button class="enviar" id="enviar" type="button">
+      ENVIAR
+    </button>
+  </div>
+</div>
+
   </div>
 
 </section>
@@ -269,6 +294,11 @@
     Iniciar conversa
   </a>
 </div>
+
+
+
+
+
 
 
 <script src="./js/script.js"></script>
