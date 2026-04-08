@@ -4,10 +4,10 @@
   overflow: hidden;
 }
 
-
 .bg {
   display: flex;
   height: 100%;
+  position: relative; 
 }
 
 
@@ -34,9 +34,9 @@
 
 .content {
   position: absolute;
-  top: 50%;
+  top: 20%;
   left: 15%; 
-  transform: translateY(-50%);
+  transform: none; 
   width: 800px; 
   color: white;
   z-index: 2;
