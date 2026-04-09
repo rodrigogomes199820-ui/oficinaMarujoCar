@@ -50,83 +50,67 @@ header {
   width: 100%;
 }
 
-.hamburger{
+.hamburger {
   display: none;
 }
 
 
-@media(max-width: 600px){
+@media(max-width: 600px) {
 
-  .logo{
+  .logo {
     display: none;
   }
 
-.menu{
-  display: none;
-  position: absolute; 
-  top: 60px;          
-  width: 100px;
-  padding: 15px;
-  background: black;
-  border-radius: 10px;
- z-index: 999;
-}
+  .menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    width: 100px;
+    padding: 15px;
+    background: black;
+    border-radius: 10px;
+    z-index: 999;
+  }
 
   .menu.ativo {
     display: block;
   }
 
- 
+
   .menu ul {
-    display: flex ;
-    flex-direction: column ;
+    display: flex;
+    flex-direction: column;
     gap: 10px;
   }
 
- 
+
 
   .menu a {
     display: block;
-    color:#e53935;
+    color: #e53935;
     font-size: 10px;
-   
-   
-
   }
 
 
 
   .menu a::after {
- display: none;
-}
+    display: none;
+  }
 
-  .hamburger{
+  .hamburger {
     display: block;
     margin: 10px;
     border-radius: 4px;
     padding: 8px;
+    font-size: 15px;
+    font-weight: 700;
     background-color: #e53935;
     border: none;
     cursor: pointer;
   }
 
-  .hamburger:hover{
+  .hamburger:hover {
     background-color: #f30d09;
   }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

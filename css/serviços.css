@@ -14,13 +14,11 @@
   color: #e53935;
 }
 
-
 .services-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
-
 
 .service-card {
   background: #1a1a1a;
@@ -38,13 +36,64 @@
   color: #aaa;
 }
 
-
 .service-card:hover {
   transform: translateY(-5px);
   border-color: #e53935;
 }
 
+/* 🔥 GALERIA */
+.galeria-container {
+  position: relative;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
 
+.galeria {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px;
+}
+
+.galeria::-webkit-scrollbar {
+  display: none;
+}
+
+.galeria img {
+  width: 280px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
+/* BOTÕES */
+.btn {
+  position: absolute;
+  background: #e53935;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 50%;
+}
+
+.prev {
+  left: -10px;
+}
+
+.next {
+  right: -10px;
+}
+
+/* RESPONSIVO */
 @media (max-width: 768px) {
 
   .services {
@@ -72,5 +121,15 @@
 
   .service-card p {
     font-size: 14px;
+  }
+
+  /* GALERIA MOBILE */
+  .galeria img {
+    width: 220px;
+    height: 150px;
+  }
+
+  .btn {
+    padding: 8px;
   }
 }

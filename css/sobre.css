@@ -86,7 +86,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.2);
+  background: rgba(0, 0, 0, 0.2);
   border-radius: 16px;
 }
 
@@ -98,7 +98,7 @@
   }
 
   .about-container {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     gap: 40px;
   }
 
@@ -118,11 +118,11 @@
     font-size: 15px;
   }
 
- 
+
   .about-numbers {
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
   }
 
   .about-numbers strong {
@@ -133,13 +133,13 @@
     font-size: 12px;
   }
 
- 
+
   .btn-about {
     padding: 12px 18px;
     font-size: 14px;
   }
 
-  
+
   .about-image {
     height: 250px;
   }
