@@ -1,7 +1,9 @@
+
 .hero {
   position: relative;
   height: 100vh;
   overflow: hidden;
+  perspective: 1000px;
 }
 
 
@@ -10,17 +12,17 @@
   height: 100%;
 }
 
-
 .left {
   width: 40%;
   background: #e53935;
 }
 
-
 .right {
   width: 60%;
-  background: url('../img/banner\ 01.png') center/cover no-repeat;
+  background: url("../img/banner 01.png") center/cover no-repeat;
   position: relative;
+  transform: scale(1);
+  transition: all 0.5s ease;
 }
 
 
@@ -29,17 +31,20 @@
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,0.5);
+  transition: 0.5s;
 }
 
 
 .content {
   position: absolute;
-  top: 50%;
-  left: 15%; 
+  top: 40%; 
+  left: 15%;
   transform: translateY(-50%);
-  width: 800px; 
+  width: 800px;
+  max-width: 90%;
   color: white;
   z-index: 2;
+  transition: all 0.5s ease;
 }
 
 .content h1 {
@@ -52,6 +57,20 @@
   margin: 20px 0;
   font-size: 18px;
 }
+
+
+.hero:hover .right {
+  transform: scale(1.08);
+}
+
+.hero:hover .content {
+  transform: translateY(-50%) translateX(3px); /* 🔥 mais suave */
+}
+
+.hero:hover .right::after {
+  background: rgba(0,0,0,0.3);
+}
+
 
 
 
@@ -67,17 +86,17 @@
 
   .left {
     width: 100%;
-    height: 100px;
+    height: 80px;
   }
 
   .right {
     width: 100%;
-    height: 400px;
+    height: 300px;
   }
 
   .content {
     position: absolute;
-    top: 38%;
+    top: 30%; 
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
@@ -85,10 +104,19 @@
   }
 
   .content h1 {
-    font-size: 32px;
+    font-size: 28px;
   }
 
   .content p {
-    font-size: 16px;
+    font-size: 14px;
+  }
+
+  
+  .hero:hover .right {
+    transform: scale(1.02);
+  }
+
+  .hero:hover .content {
+    transform: translate(-50%, -50%);
   }
 }
